@@ -3,18 +3,18 @@
 // Coloca o encoding para UTF8 para exibir acentuação
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-decimal precoInicial = 0;
-decimal precoPorHora = 0;
+decimal PricingStart = 0;
+decimal PricingByHour = 0;
 
 Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n" +
                   "Digite o preço inicial:");
-precoInicial = Convert.ToDecimal(Console.ReadLine());
+PricingStart = Convert.ToDecimal(Console.ReadLine());
 
 Console.WriteLine("Agora digite o preço por hora:");
-precoPorHora = Convert.ToDecimal(Console.ReadLine());
+PricingByHour = Convert.ToDecimal(Console.ReadLine());
 
 // Instancia a classe Estacionamento, já com os valores obtidos anteriormente
-Estacionamento es = new Estacionamento(precoInicial, precoPorHora);
+Estacionamento es = new Estacionamento(PricingStart, PricingByHour);
 
 string opcao = string.Empty;
 bool exibirMenu = true;
@@ -40,7 +40,7 @@ while (exibirMenu)
             break;
 
         case "3":
-            es.ListarVeiculos();
+            es.ListarVehicles();
             break;
 
         case "4":
