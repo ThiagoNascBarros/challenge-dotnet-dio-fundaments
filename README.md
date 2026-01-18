@@ -25,7 +25,7 @@ Sistema completo de gerenciamento de estacionamento desenvolvido em C# como part
 ## 🛠️ Tecnologias Utilizadas
 
 - **C# 10**
-- **.NET 6.0 / 8.0**
+- **.NET  8.0**
 - **Programação Orientada a Objetos**
 - **Collections (List<T>)**
 - **LINQ**
